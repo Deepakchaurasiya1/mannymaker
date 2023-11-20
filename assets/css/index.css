@@ -1,0 +1,51 @@
+ /* Navbar Text Hover*/
+ a:hover {
+     color: #7d8dec !important;
+ }
+
+ /* Side WhatsApp Icon */
+ #whatsapp-icon {
+     left: 10px;
+     bottom: 10px;
+     position: fixed;
+ }
+
+ /* Side Scrollbar*/
+ ::-webkit-scrollbar {
+     width: 8px;
+ }
+
+ ::-webkit-scrollbar-thumb {
+     background-color: #7d8dec;
+     border-radius: 100px !important;
+ }
+
+ ::-webkit-scrollbar-thumb:hover {
+     background-color: rgb(192, 186, 186);
+ }
+
+ /* Down to Upper Side Button */
+ #scrollToTopBtn {
+     display: none;
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     background-color: #7d8dec;
+     color: #fff;
+     border: none;
+     border-radius: 5px;
+     font-size: 1.5em;
+     cursor: pointer;
+     padding: 15px;
+ }
+
+ /* Seach Box Hide on Phone*/
+ @media screen and (max-width: 992px) {
+     .navsearch {
+         display: none;
+     }
+
+     #logo {
+         width: 100px !important;
+     }
+ }

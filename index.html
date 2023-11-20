@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manny Maker</title>
+  <link rel="shortcut icon" href="assets/img/manny-makaer-favicon.png" type="image/x-icon">
+  <!-- Bootstrap Link CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Font Family Add CDN -->
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&">
+  <!-- Icon Add Link CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!-- Custome CSS Add -->
+ <link rel="stylesheet" href="assets/css/index.css">
+  
+</head>
+
+<style> 
+  /* Blog Section Image */
+  .card-img-top:hover {
+    transform: scale(0.9) rotate(5deg);
+  }
+
+  .card {
+    background-color: #e9e9e9;
+    animation-duration: 0.5ms;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+  }
+
+</style>
+
+<body>
+  <!-- Navbar-Top-->
+  <div class="container-fluid text-light p-2" style="background-color: #7d8dec;">
+    <div class="container d-flex justify-content-between justify-content-center align-items-center">
+      <p style="font-size: 18px; font-weight:400; font-family:archivo;">hello@mannymaker.com</p>
+      <div class="d-flex justify-items-end gap-4">
+        <a href="#" style="text-decoration: none; color: white;"
+          onmouseover="document.getElementById('icon').style.color='#0866ff'"
+          onmouseout="document.getElementById('icon').style.color='white'">
+          <i class="fa fa-facebook-f" style="font-size:24px;color:white" id="icon"></i>
+        </a>
+        <a href="#" style="text-decoration: none; color: white;"
+          onmouseover="document.getElementById('icon1').style.color='#e702b9'"
+          onmouseout="document.getElementById('icon1').style.color='white'">
+          <i class="fa fa-instagram" style="font-size:24px;color:white" id="icon1"></i>
+        </a>
+        <a href="#" style="text-decoration: none; color: white;"
+          onmouseover="document.getElementById('icon2').style.color='#1c96e8'"
+          onmouseout="document.getElementById('icon2').style.color='white'">
+          <i class="fa fa-twitter" style="font-size:24px;color:white" id="icon2"></i>
+        </a>
+        <a href="#" style="text-decoration: none; color: white;"
+          onmouseover="document.getElementById('icon3').style.color='#f70101'"
+          onmouseout="document.getElementById('icon3').style.color='white'">
+          <i class="fa fa-youtube" style="font-size:24px;color:white" id="icon3"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top bg-light" style="font-weight: 400; font-family: archivo;">
+    <div class="container">
+      <img src="assets/img/logo.png" id="logo" alt="Manny-Maker-Logo" style="height: 50%; width: 7%; margin-right: 17%;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item p-2">
+            <a class="navbar-brand" href="index.html">Home</a>
+          </li>
+          <li class="nav-item p-2">
+            <a class="navbar-brand " href="About Us.html">About Us</a>
+          </li>
+          <li class="nav-item dropdown p-2">
+            <a class="dropdown-toggle navbar-brand" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Cricut Desing</a>
+            <ul class="dropdown-menu navbar-brand">
+              <li><a class="dropdown-item" href="#">Featured Products</a></li>
+              <li><a class="dropdown-item" href="#">Cricut Project Ideas</a></li>
+              <li><a class="dropdown-item" href="#">Diy Designs For Cricut</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown p-2">
+            <a class="dropdown-toggle navbar-brand" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Silhouette Designs</a>
+            <ul class="dropdown-menu navbar-brand">
+              <li><a class="dropdown-item" href="#"> Diy Designs for Silhouette</a></li>             
+            </ul>
+          </li>
+          <li class="nav-item dropdown p-2">
+            <a class="dropdown-toggle navbar-brand" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Help Guides</a>
+            <ul class="dropdown-menu navbar-brand">
+              <li><a class="dropdown-item" href="#">Setup Cricut Air 2</a></li>
+              <li><a class="dropdown-item" href="#">Something Else Here</a></li>
+              <li><a class="dropdown-item" href="#">Best Cricut Machine for Home</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="fa fa-search navsearch" style="font-size:24px; color:#7d8dec;"></i>
+      </div>
+    </div>
+  </nav>
+  <!-- Slider Start -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">      
+    <div class="carousel-inner">    
+      <div class="carousel-item active">
+        <img src="assets/img/Banner-1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/Banner-2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/Banner-3.jpg" class="d-block w-100" alt="...">
+      </div>  
+    </div>    
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>   
+  </div>
+  <!-- Welcome to Manny Maker -->
+  <div class="container mt-5">
+    <h1 style="font-weight:500;font-family:archivo;font-size:48px;background-color:#7d8dec;">Welcome To Manny Maker</h1>
+    <p style="font-weight:500;font-family:archivo;font-size:20px;">Welcome to MannyMaker! This platform shares the
+      knowledge of creative DIY crafting with Cricut and Silhouette machines. I will help unleash the passion of
+      crafting for hobbyists and aspiring new Cricut and Silhouette crafters. MannyMaker shares all the knowledge and
+      experience I have gained through years of practice as a professional crafter.</p>
+    <p style="font-weight:500;font-family:archivo;font-size:20px;">Explore the new concept of design and unlock the true
+      potential of your imagination. Beginners can learn effortless yet jaw-dropping projects. Plus, professional
+      crafters can discover some unique and beautiful Cricut and Silhouette instant designs for home and office.</p>
+  </div>
+  <!-- Cricut Maker Designs for Home -->
+  <div class="container mt-5">
+    <h1 style="font-weight:500;font-family:archivo;font-size:48px;background-color:#7d8dec;">Cricut Maker Designs for
+      Home</h1>
+    <p style="font-weight:500;font-family:archivo;font-size:20px;">You must love creating amazing art pieces with your
+      Cricut Maker machine. But you may have also gotten bored trying the same old designs for a long time. Get your
+      hands on some new Cricut Maker Designs For Home that you can try.</p>
+    <details>
+      <summary style="font-weight:500;font-family:archivo;font-size:32px;color:#7d8dec;">Read More...</summary>
+      <p style="font-weight:500;font-family:archivo;font-size:20px;">Explore the new concept of design and unlock the
+        true potential of your imagination. Beginners can learn effortless yet jaw-dropping projects. Plus, professional
+        crafters can discover some unique and beautiful Cricut and Silhouette instant designs for home and office.</p>
+    </details>
+    <hr>
+    <!------------ Blog Section------------>
+    <div class="container d-flex flex-wrap justify-content-center justify-content-between">
+      <div class="card m-3" style="width:23rem;">
+        <img class="card-img-top" src="assets/img/blog-images/1.webp" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size:21px;font-weight:600; font-family:archivo;">6 Cricut Maker Black
+            Friday Design</h5>
+          <hr>
+          <p class="card-text" style="font-weight:500;font-family:archivo;font-size:20px;">Some quick example text to
+            build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+      <div class="card m-3" style="width: 23rem;">
+        <img class="card-img-top" src="assets/img/blog-images/2.webp" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size:21px;font-weight:600; font-family:archivo;">Halloween Design Ideas for
+            Home</h5>
+          <hr>
+          <p class="card-text" style="font-weight:500;font-family:archivo;font-size:20px;">Some quick example text to
+            build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+      <div class="card m-3" style="width:23rem;">
+        <img class="card-img-top" src="assets/img/blog-images/3.webp" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size:21px;font-weight:600; font-family:archivo;">How to Make Coasters for
+            Home</h5>
+          <hr>
+          <p class="card-text" style="font-weight:500;font-family:archivo;font-size:20px;">Some quick example text to
+            build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Cricut Maker Designs for Office -->
+  <div class="container mt-5">
+    <h1 style="font-weight:500;font-family:archivo;font-size:48px;background-color:#7d8dec;">Cricut Maker Designs for
+      Office</h1>
+    <p style="font-weight:500;font-family:archivo;font-size:20px;">Are you planning to make DIY designs for your office?
+      Well, then, you are lucky to be here. For working people, an office place is nothing less than a home. In the
+      office, employees spend a major portion of their day.</p>
+    <details>
+      <summary style="font-weight:500;font-family:archivo;font-size:32px;color:#7d8dec;">Read More...</summary>
+      <p style="font-weight:500;font-family:archivo;font-size:20px;">As a result, it is beneficial to decorate your
+        workplace to keep yourself healthy and productive. Here, you will get to know about some exclusive and captive
+        Cricut Maker Designs For Office.</p>
+      <p style="font-weight:500;font-family:archivo;font-size:20px;">I have curated some of the unique DIY project ideas
+        for offices. Also, you can try any/some of these design ideas that reflect your personality. Plus, making a
+        design and decorating your office can offer you a feeling of achievement. What are you thinking now? All you
+        need for your office projects is just one click away.</p>
+    </details>
+    <hr>
+    <!------------ Blog Section------------>
+    <div class="container d-flex flex-wrap justify-content-center justify-content-between">
+      <div class="card m-3" style="width:23rem;">
+        <img class="card-img-top" src="assets/img/blog-images/4.webp" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size:21px;font-weight:600; font-family:archivo;">Cricut Design Ideas For
+            Black Friday 2023</h5>
+          <hr>
+          <p class="card-text" style="font-weight:500;font-family:archivo;font-size:20px;">Some quick example text to
+            build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+      <div class="card m-3" style="width: 23rem;">
+        <img class="card-img-top" src="assets/img/blog-images/5.webp" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size:21px;font-weight:600; font-family:archivo;">10 Instant DIY Cricut
+            Design Ideas for Halloween</h5>
+          <hr>
+          <p class="card-text" style="font-weight:500;font-family:archivo;font-size:20px;">Some quick example text to
+            build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+      <div class="card m-3" style="width:23rem;">
+        <img class="card-img-top" src="assets/img/blog-images/6.webp" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size:21px;font-weight:600; font-family:archivo;">Sublimation Designs for
+            Your Cricut Mug Press Machine</h5>
+          <hr>
+          <p class="card-text" style="font-weight:500;font-family:archivo;font-size:20px;">Some quick example text to
+            build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Instant DIY Designs -->
+  <div class="container mt-5">
+    <h1 style="font-weight:500;font-family:archivo;font-size:48px;background-color:#7d8dec;">Instant DIY Designs</h1>
+    <p style="font-weight:500;font-family:archivo;font-size:20px;">If you are looking for something eye-catching that
+      can be made in an instant, then you need to try these instant DIY designs once. These are some awesome designs
+      that you can create in just a few simple steps in no time.</p>
+    <details>
+      <summary style="font-weight:500;font-family:archivo;font-size:32px;color:#7d8dec;">Read More...</summary>
+      <p style="font-weight:500;font-family:archivo;font-size:20px;">Plus, these designs are made on the basis of new
+        concepts you will not find somewhere else. Additionally, trying these instant projects can give you a break from
+        the daily projects you work on. Besides that, you do have to use many tools and materials to complete these
+        easy-to-make designs.</p>
+      <p style="font-weight:500;font-family:archivo;font-size:20px;">We will not only tell you about the designs but
+        also give you an insight into what supplies you need and how to start creating. So, open this post right away to
+        get a full understanding of these new projects you can try whenever you like.</p>
+    </details>
+    <hr>
+    <!------------ Blog Section------------>
+    <div class="container d-flex flex-wrap justify-content-center justify-content-between">
+      <div class="card m-3" style="width:23rem;">
+        <img class="card-img-top" src="assets/img/blog-images/7.webp" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size:21px;font-weight:600; font-family:archivo;">5 Instant DIY Cricut
+            Design Ideas</h5>
+          <hr>
+          <p class="card-text" style="font-weight:500;font-family:archivo;font-size:20px;">Some quick example text to
+            build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+      <div class="card m-3" style="width: 23rem;">
+        <img class="card-img-top" src="assets/img/blog-images/8.webp" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size:21px;font-weight:600; font-family:archivo;">Cricut Design Ideas For
+            Black Friday 2023</h5>
+          <hr>
+          <p class="card-text" style="font-weight:500;font-family:archivo;font-size:20px;">Some quick example text to
+            build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+      <div class="card m-3" style="width:23rem;">
+        <img class="card-img-top" src="assets/img/blog-images/9.webp" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size:21px;font-weight:600; font-family:archivo;">10 Instant DIY Cricut
+            Design Ideas for Halloween</h5>
+          <hr>
+          <p class="card-text" style="font-weight:500;font-family:archivo;font-size:20px;">Some quick example text to
+            build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Silhouette Designs for Home -->
+  <div class="container mt-5">
+    <h1 style="font-weight:500;font-family:archivo;font-size:48px;background-color:#7d8dec;">Silhouette Designs for Home
+    </h1>
+    <p style="font-weight:500;font-family:archivo;font-size:20px;">I have worked on many Silhouette Designs for home
+      that any crafter with a good taste will love. Though it is not necessary that every crafter has the same crafting
+      skills, there is no harm in exploring new ideas.</p>
+    <details>
+      <summary style="font-weight:500;font-family:archivo;font-size:32px;color:#7d8dec;">Read More...</summary>
+      <p style="font-weight:500;font-family:archivo;font-size:20px;">We have spent months figuring out the best and most
+        unique designs. New crafters can take inspiration from these designs to create something creative using their
+        creativity. However, if you are a professional crafter in a business, you can get an idea to include some of
+        these products in your product line.</p>
+      <p style="font-weight:500;font-family:archivo;font-size:20px;">They'll also be beneficial for crafters that just
+        want to try some cool designs for decorating their home with hand-made projects. Therefore, start reading these
+        posts right away. I guarantee that they're worth your time.</p>
+    </details>
+    <hr>
+    <!------------ Blog Section------------>
+    <div class="container d-flex flex-wrap justify-content-center justify-content-between">
+      <div class="card m-3" style="width:23rem;">
+        <img class="card-img-top" src="assets/img/blog-images/10.webp" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size:21px;font-weight:600; font-family:archivo;">Silhouette Cameo Black
+            Friday</h5>
+          <hr>
+          <p class="card-text" style="font-weight:500;font-family:archivo;font-size:20px;">Some quick example text to
+            build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+      <div class="card m-3" style="width: 23rem;">
+        <img class="card-img-top" src="assets/img/blog-images/11.webp" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size:21px;font-weight:600; font-family:archivo;">Silhouette Cameo Halloween
+          </h5>
+          <hr>
+          <p class="card-text" style="font-weight:500;font-family:archivo;font-size:20px;">Some quick example text to
+            build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+      <div class="card m-3" style="width:23rem;">
+        <img class="card-img-top" src="assets/img/blog-images/12.webp" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size:21px;font-weight:600; font-family:archivo;">How to Print Stickers On
+            Silhouette</h5>
+          <hr>
+          <p class="card-text" style="font-weight:500;font-family:archivo;font-size:20px;">Some quick example text to
+            build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About Section -->
+  <div class="container mt-5">
+    <div class="d-flex flex-wrap justify-content-center">
+      <img src="assets/img/manny-makar-about.jpg" alt="" class="rounded-circle" width="30%">
+      <div class="card-body">
+        <h5 class="card-title mb-5"
+          style="font-weight:500;font-family:archivo;font-size:48px;background-color:#7d8dec;">About Manny</h5>
+        <p style="font-weight:500;font-family:archivo;font-size:20px; margin-left: 20px;">Hey there! <b>I’m Manny, the
+            founder,</b> editor, and the driving force behind MannyMaker.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-5">
+          <button class="btn me-md-2 btn-lg mt-5" type="button"
+            style="font-weight:400;font-family:archivo;font-size:22px;margin-top: 15% !important; background-color: #e9e9e9;">LEARN MORE ABOUT ME
+            →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Silhouette Designs for Office -->
+  <div class="container mt-5">
+    <h1 style="font-weight:500;font-family:archivo;font-size:48px;background-color:#7d8dec;">Silhouette Designs for
+      Office</h1>
+    <p style="font-weight:500;font-family:archivo;font-size:20px;">Silhouette machines help many professional crafters
+      and hobbyists create fantastic projects. Many crafters use these machines for their full-time business. While on
+      the other side, some use it for their crafting hobby.</p>
+    <details>
+      <summary style="font-weight:500;font-family:archivo;font-size:32px;color:#7d8dec;">Read More...</summary>
+      <p style="font-weight:500;font-family:archivo;font-size:20px;">No matter the goal, Silhouette has always been an
+        amazing companion. So, if you are also a user of this machine, you must try these Silhouette designs for office
+        for your upcoming projects. These designs can be used to decorate your office place or just for inspiration to
+        create related projects.</p>
+      <p style="font-weight:500;font-family:archivo;font-size:20px;">In addition, you can give a shot to these designs
+        if you are looking for some new designs. So, click on the blogs below to look at what these Silhouette office
+        designs are and check if any of these you knew before.</p>
+    </details>
+    <hr>
+    <!------------ Blog Section------------>
+    <div class="container d-flex flex-wrap justify-content-center justify-content-between">
+      <div class="card m-3" style="width:23rem;">
+        <img class="card-img-top" src="assets/img/blog-images/13.webp" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size:21px;font-weight:600; font-family:archivo;">Silhouette Cameo Black
+            Friday</h5>
+          <hr>
+          <p class="card-text" style="font-weight:500;font-family:archivo;font-size:20px;">Some quick example text to
+            build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+      <div class="card m-3" style="width: 23rem;">
+        <img class="card-img-top" src="assets/img/blog-images/14.webp" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size:21px;font-weight:600; font-family:archivo;">Cameo Halloween Projects
+            for Office</h5>
+          <hr>
+          <p class="card-text" style="font-weight:500;font-family:archivo;font-size:20px;">Some quick example text to
+            build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+      <div class="card m-3" style="width:23rem;">
+        <img class="card-img-top" src="assets/img/blog-images/15.webp" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size:21px;font-weight:600; font-family:archivo;">How to Custom Design
+            Coffee Mug</h5>
+          <hr>
+          <p class="card-text" style="font-weight:500;font-family:archivo;font-size:20px;">Some quick example text to
+            build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Help Guids Youtube Blog -->
+  <div class="container mt-5">
+    <h1 style="font-weight:500;font-family:archivo;font-size:48px;background-color:#7d8dec;">Help Guide</h1>
+    <!------------Youtube Blog Section------------>
+    <div class="container d-flex flex-wrap justify-content-center justify-content-between">
+      <div class="card m-3" style="width:23rem;">
+        <img class="card-img-top" src="assets/img/youtube/y-1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size:21px;font-weight:600; font-family:archivo;">How to Use the project
+            tool in Cricut Design Space<h5>
+        </div>
+      </div>
+      <div class="card m-3" style="width: 23rem;">
+        <img class="card-img-top" src="assets/img/youtube/y-2.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size:21px;font-weight:600; font-family:archivo;">How to Bookmark Fonts in
+            Cricut Design Space</h5>
+        </div>
+      </div>
+      <div class="card m-3" style="width:23rem;">
+        <img class="card-img-top" src="assets/img/youtube/y-3.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size:21px;font-weight:600; font-family:archivo;">How to Use Offset Feature
+            in Cricut Design Space</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Section Here -->
+  <div class="mt-5 bg-dark text-light">
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-4">
+            <img src="assets/img/logo.png" alt="" width="40%">
+            <p style="font-weight:500;font-family:archivo;font-size:20px; margin-top: 30px;">Mannymaker gives instant
+              ideas for Cricut and
+              Silhouette Designs for your Home and Office projects.</p>
+            <!-- Social Icon Footer Here -->
+            <a href="#" style="text-decoration: none; color: white;"
+              onmouseover="document.getElementById('iconf').style.color='#0866ff'"
+              onmouseout="document.getElementById('iconf').style.color='white'">
+              <i class="fa fa-facebook-f m-2" style="font-size:24px;color:white" id="iconf"></i>
+            </a>
+            <a href="#" style="text-decoration: none; color: white;"
+              onmouseover="document.getElementById('iconf1').style.color='#e702b9'"
+              onmouseout="document.getElementById('iconf1').style.color='white'">
+              <i class="fa fa-instagram m-2" style="font-size:24px;color:white" id="iconf1"></i>
+            </a>
+            <a href="#" style="text-decoration: none; color: white;"
+              onmouseover="document.getElementById('iconf2').style.color='#1c96e8'"
+              onmouseout="document.getElementById('iconf2').style.color='white'">
+              <i class="fa fa-twitter m-2" style="font-size:24px;color:white" id="iconf2"></i>
+            </a>
+            <a href="#" style="text-decoration: none; color: white;"
+              onmouseover="document.getElementById('iconf3').style.color='#f70101'"
+              onmouseout="document.getElementById('iconf3').style.color='white'">
+              <i class="fa fa-youtube m-2" style="font-size:24px;color:white" id="iconf3"></i>
+            </a>
+          </div>
+
+          <div class="col-4">
+            <h5 style="font-size:21px;font-weight:600; font-family:archivo; color:#7d8dec;">Useful Links</h5>
+            <ul class="navbar-nav" style="font-weight:500;font-family:archivo;font-size:20px;">
+              <li class="nav-item m-1">
+                <a class="navbar-brand" href="http://127.0.0.1:5500/index.html">Home</a>
+              </li>
+              <li class="nav-item m-1">
+                <a class="navbar-brand " href="#">About Us</a>
+              </li>
+              <li class="nav-item m-1">
+                <a class="navbar-brand " href="#">Privacy Policy</a>
+              </li>
+              <li class="nav-item m-1">
+                <a class="navbar-brand " href="#">Terms & Conditions</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-4">
+            <form>
+              <h5 style="font-size:21px;font-weight:600; font-family:archivo; color:#7d8dec;">Subscribe Now</h5>
+              <p style="font-weight:500;font-family:archivo;font-size:20px;">Don’t miss our future updates! Get
+                Subscribed Today!</p>
+              <div class="d-flex w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button" style="background-color: #7d8dec; border: none;">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center p-3 text-light"
+    style="font-weight:500;font-family:archivo;font-size:20px;background-color:#7d8dec;">
+    <p>©copyright 2023 all rights reserved</p>
+  </div>
+  </footer>
+  <!-- WhatsApp -->
+  <a id="whatsapp-icon" href="https://wa.me/7678974784" target="_blank">
+    <img src="assets/img/whatsApp.png" alt="WhatsApp" width="80px">
+  </a>
+<!-- Down to Upper Side Button -->
+  <button onclick="scrollToTop()" id="scrollToTopBtn">&#8593;</button>
+
+
+
+
+
+
+
+
+ 
+
+  <!-- Bootstrap JS Add -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+ <!-- Link Custome JS -->
+ <script src="assets/js/index.js"></script>
+
+</body>
+</html>
