@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Manny Maker</title>
-    <link rel="shortcut icon" href="assets/img/manny-makaer-favicon.png" type="image/x-icon">
-    <!-- Bootstrap Link CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Font Family Add CDN -->
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&">
-    <!-- Icon Add Link CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <!-- Custome CSS Add -->
-   <link rel="stylesheet" href="assets/css/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Manny Maker</title>
+  <link rel="shortcut icon" href="assets/img/manny-makaer-favicon.png" type="image/x-icon">
+  <!-- Bootstrap Link CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Font Family Add CDN -->
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&">
+  <!-- Icon Add Link CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Custome CSS Add -->
+  <link rel="stylesheet" href="assets/css/index.css">
 </head>
+<style>
+  /* Paragraph Section Here */
+  .row p {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: archivo;
+    text-align: justify;
+  }
+
+  /* Blog Side Section */
+  .list-group-item:hover {
+    transform: scale(0.9);
+    background-color: #e9e9e9;
+    border-radius: 10px;
+    border: solid 1px #7d8dec;
+  }
+</style>
+
 <body>
-      <!-- Navbar-Top-->
+  <!-- Navbar-Top-->
   <div class="container-fluid text-light p-2" style="background-color: #7d8dec;">
     <div class="container d-flex justify-content-between justify-content-center align-items-center">
       <p style="font-size: 18px; font-weight:400; font-family:archivo;">hello@mannymaker.com</p>
@@ -44,52 +63,123 @@
       </div>
     </div>
   </div>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top bg-light" style="font-weight: 400; font-family: archivo;">
-        <div class="container">
-          <img src="assets/img/logo.png" id="logo" alt="Manny-Maker-Logo" style="height: 50%; width: 7%; margin-right: 17%;">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item p-2">
-                <a class="navbar-brand" href="index.html">Home</a>
-              </li>
-              <li class="nav-item p-2">
-                <a class="navbar-brand " href="About Us.html">About Us</a>
-              </li>
-              <li class="nav-item dropdown p-2">
-                <a class="dropdown-toggle navbar-brand" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">Cricut Desing</a>
-                <ul class="dropdown-menu navbar-brand">
-                  <li><a class="dropdown-item" href="#">Featured Products</a></li>
-                  <li><a class="dropdown-item" href="#">Cricut Project Ideas</a></li>
-                  <li><a class="dropdown-item" href="#">Diy Designs For Cricut</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown p-2">
-                <a class="dropdown-toggle navbar-brand" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">Silhouette Designs</a>
-                <ul class="dropdown-menu navbar-brand">
-                  <li><a class="dropdown-item" href="#"> Diy Designs for Silhouette</a></li>             
-                </ul>
-              </li>
-              <li class="nav-item dropdown p-2">
-                <a class="dropdown-toggle navbar-brand" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">Help Guides</a>
-                <ul class="dropdown-menu navbar-brand">
-                  <li><a class="dropdown-item" href="#">Setup Cricut Air 2</a></li>
-                  <li><a class="dropdown-item" href="#">Something Else Here</a></li>
-                  <li><a class="dropdown-item" href="#">Best Cricut Machine for Home</a></li>
-                </ul>
-              </li>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top bg-light" style="font-weight: 400; font-family: archivo;">
+    <div class="container">
+      <img src="assets/img/logo.png" id="logo" alt="Manny-Maker-Logo"
+        style="height: 50%; width: 7%; margin-right: 17%;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item p-2">
+            <a class="navbar-brand" href="index.html">Home</a>
+          </li>
+          <li class="nav-item p-2">
+            <a class="navbar-brand " href="About Us.html">About Us</a>
+          </li>
+          <li class="nav-item dropdown p-2">
+            <a class="dropdown-toggle navbar-brand" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Cricut Desing</a>
+            <ul class="dropdown-menu navbar-brand">
+              <li><a class="dropdown-item" href="#">Featured Products</a></li>
+              <li><a class="dropdown-item" href="#">Cricut Project Ideas</a></li>
+              <li><a class="dropdown-item" href="#">Diy Designs For Cricut</a></li>
             </ul>
-            <i class="fa fa-search navsearch" style="font-size:24px; color:#7d8dec;"></i>
-          </div>
+          </li>
+          <li class="nav-item dropdown p-2">
+            <a class="dropdown-toggle navbar-brand" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Silhouette Designs</a>
+            <ul class="dropdown-menu navbar-brand">
+              <li><a class="dropdown-item" href="#"> Diy Designs for Silhouette</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown p-2">
+            <a class="dropdown-toggle navbar-brand" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Help Guides</a>
+            <ul class="dropdown-menu navbar-brand">
+              <li><a class="dropdown-item" href="#">Setup Cricut Air 2</a></li>
+              <li><a class="dropdown-item" href="#">Something Else Here</a></li>
+              <li><a class="dropdown-item" href="#">Best Cricut Machine for Home</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="fa fa-search navsearch" style="font-size:24px; color:#7d8dec;"></i>
+      </div>
+    </div>
+  </nav>
+  <!-- About Us Section Start -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-8 col-12">
+        <img src="assets/img/manny-makar-about.jpg" alt="" class="img-fluid mb-5">
+        <h1 style="font-weight:500;font-family:archivo;font-size:48px; margin-bottom:20px;">About Manny</h1>
+        <h3 style="line-height:40px; font-family:archivo; margin-bottom: 20px;">Hey there! I’m <b>Manny, the
+            founder,</b> editor, and the driving force behind MannyMaker</h3>
+        <p>Ever since I can remember, I’ve been captivated by the world of crafts. From colorful paintings to intricate
+          sculptures, I’ve always found joy in creating something from scratch. Now, I’m thrilled to share my love for
+          crafts with you through my website.</p>
+        <p>It all started when I was a kid, tinkering around with paints, clay, and whatever materials I could get my
+          hands on. There was this unexplainable joy that came from bringing something to life with my own two hands.
+          Little did I know that this spark of creativity would shape my entire future.</p>
+        <p>Over time, I realized that my creations had the power to touch people’s lives. As I had bought Cricut and
+          Silhouette machines, friends and family started coming to me for advice regarding new craft ideas.</p>
+        <p>That’s when the idea of <span style="color: #8c9aee;">Mannymaker.com</span> was born. It became my mission to
+          create a platform where I could showcase my designs, share my knowledge, and build a community of like-minded
+          individuals who shared my passion for creativity. I poured my heart and soul into creating a space that would
+          inspire, support, and celebrate the artistic journeys of others.</p>
+        <p>Launching Mannymaker was a dream come true. It’s not just a business venture for me; it’s a way of life.
+          Every design, tutorial, and resource on the website is a reflection of my own experiences, my love for crafts,
+          and my desire to empower others to discover the joy of creating.</p>
+        <p>Welcome to Mannymaker.com, where creativity knows no bounds!</p>
+        <h2 style="font-weight:500;font-family:archivo;font-size:48px;margin:20px 0px 20px;">About Mannymaker</h2>
+        <p><span style="color:#8c9aee;"> At Mannymaker.com,</span>you’ll find a treasure trove of designs and projects
+          that will inspire and ignite your creativity. Whether you’re a seasoned pro or just starting out on your
+          creative journey, there’s something here for everyone.</p>
+        <p>I’ve carefully curated a collection of designs that will transform your home and workspace. From eye-catching
+          Cricut Maker designs that add a personal touch to your home décor, to fun and innovative DIY projects that
+          bring ordinary objects to life, you’ll discover endless inspiration at Mannymaker</p>
+        <p>But it doesn’t stop there! I’m here to guide you every step of the way. Through easy-to-follow tutorials and
+          helpful tips, I’ll show you how to bring your creative visions to life. No matter your skill level, I believe
+          that everyone has the potential to create something amazing.</p>
+        <p>More than just a website, Mannymaker is a vibrant community of makers and art enthusiasts. It’s a place where
+          we come together to share ideas, support one another, and celebrate the joy of crafting. I’m here to cheer you
+          on and help you unleash your inner artist.</p>
+        <p>So, whether you’re looking to learn a new skill, find inspiration for your next project, or simply connect
+          with fellow creatives, Mannymaker is your go-to destination. Join me on this exciting journey of exploration,
+          imagination, and self-expression. Let’s make something incredible together!</p>
+      </div>
+      <!-- Side Blog Section Here -->
+      <div class="col-lg-4 col-12">
+        <img src="assets/img/manny-makar-about.jpg" alt="" width=100%; class="rounded-circle mb-5">
+        <h3 style="line-height:40px; font-family:archivo;"><b>Hey there! I’m Manny,</b> the founder, editor, and the
+          driving force behind <b>MannyMaker.</b></h3>
+        <h3 style="line-height:40px; font-family:archivo; text-align:center; margin:2% 2%;">Recent<b> Post</h3>
+        <hr class="border-primary thick-divider">
+
+        <!-- Side Blog Section Right Side To New Blog Post Show -->
+        <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white text-align:center"
+          style="width: 420px;">
+          <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+            <div class="d-flex w-100 align-items-center justify-content-between">
+              <h5 class="card-title" style="font-size:21px;font-weight:600; font-family:archivo;">6 Cricut Maker Black
+                Friday Design</h5>
+              <img src="assets/img/blog-images/1.webp" alt="" width="120px">
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+            <div class="d-flex w-100 align-items-center justify-content-between">
+              <strong class="mb-1">List group item heading</strong>
+              <img src="assets/img/Banner-1.jpg" alt="" width="100px">
+            </div>
+          </a>
         </div>
-      </nav>
+      </div>
+    </div>
+  </div>
+  </div>
 
 
 
@@ -119,13 +209,17 @@
 
 
 
-      
+
+
+
+
   <!-- Bootstrap JS Add -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-  crossorigin="anonymous"></script>
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
-<!-- Link Custome JS -->
-<script src="assets/js/index.js"></script>
+  <!-- Link Custome JS -->
+  <script src="assets/js/index.js"></script>
 </body>
+
 </html>
