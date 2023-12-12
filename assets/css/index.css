@@ -1,53 +1,71 @@
- /* Navbar Text Hover*/
- a:hover {
-     color: #7d8dec !important;
- }
+/* Mouse Cursor */
+body {
+    margin: 0;
+    cursor: cursor;
+    overflow: hidden;
+}
 
- /* Side WhatsApp Icon */
- #whatsapp-icon {
-     left: 10px;
-     bottom: 10px;
-     position: fixed;
- }
+/* Mouse Cursor Event */
+#custom-cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.5);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s, height 0.2s;
+}
 
- /* Side Scrollbar*/
- ::-webkit-scrollbar {
-     width: 8px;
- }
+/* Navbar Text Hover*/
+a:hover {
+    color: #7d8dec !important;
+}
 
- ::-webkit-scrollbar-thumb {
-     background-color: #7d8dec;
-     border-radius: 100px !important;
- }
+/* Side WhatsApp Icon */
+#whatsapp-icon {
+    left: 10px;
+    bottom: 10px;
+    position: fixed;
+}
 
- ::-webkit-scrollbar-thumb:hover {
-     background-color: rgb(192, 186, 186);
- }
+/* Side Scrollbar*/
+::-webkit-scrollbar {
+    width: 8px;
+}
 
- /* Down to Upper Side Button */
- #scrollToTopBtn {
-     display: none;
-     position: fixed;
-     bottom: 25px;
-     right: 25px;
-     background-color: #7d8dec;
-     color: #fff;
-     border: none;
-     border-radius: 5px;
-     font-size: 1.5em;
-     cursor: pointer;
-     height: 50px;
-     width: 50px;
- }
+::-webkit-scrollbar-thumb {
+    background-color: #7d8dec;
+    border-radius: 100px !important;
+}
 
- /* Seach Box Hide on Phone*/
- @media screen and (max-width: 992px) {
-     .navsearch {
-         display: none;
-     }
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(192, 186, 186);
+}
 
-     #logo {
-         width: 100px !important;
-     }
- }
+/* Down to Upper Side Button */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #7d8dec;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
 
+/* Seach Box Hide on Phone*/
+@media screen and (max-width: 992px) {
+    .navsearch {
+        display: none;
+    }
+
+    #logo {
+        width: 100px !important;
+    }
+}
