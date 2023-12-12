@@ -55,7 +55,7 @@ body{
      width: 50px;
  }
 
- /* Seach Box Hide on Phone*/
+ /* Search Box Hide on Phone*/
  @media screen and (max-width: 992px) {
      .navsearch {
          display: none;
