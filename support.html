@@ -17,6 +17,58 @@
     <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
+<style>
+    /* Marquee Tag */
+    .content-section {
+        padding: 20px;
+        color: white;
+        overflow: hidden;
+        text-align: center;
+        transition: transform 3s;
+    }
+
+    @keyframes zoom {
+        from {
+            transform: scale(1);
+        }
+
+        to {
+            transform: scale(2.2);
+        }
+    }
+
+    .content-section:hover {
+        animation: zoom 5s infinite alternate;
+    }
+
+    /* Submit Button Animation Here */
+    .btn-wrapper {
+        position: relative;
+    }
+
+    .btn-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #7d8dec;
+        border-radius: 30px;
+        transform-origin: 50% 50%;
+        transform: scale(0);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .btn-wrapper:hover .btn-background {
+        transform: scale(1) rotate(360deg);
+    }
+
+    .btn-text {
+        position: relative;
+        z-index: 1;
+    }
+</style>
+
 <body>
     <!-- Navbar-Top-->
     <div class="container-fluid text-light p-2" style="background-color: #7d8dec;">
@@ -116,50 +168,89 @@
 
                     <!-- Marquee Tag Content Section -->
                     <div class="col-md-10">
-                        <div class="content-section"
-                            style="background-color:#7d8dec; padding: 20px; text-align: center;">
-                            <marquee behavior="" direction="">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum qui pariatur
-                                ratione ad?
+                        <div class="content-section">
+                            <marquee behavior="scroll" direction="left" style="font-weight: 400; font-family: archivo;">
+                                Leave your contact details for us to consort with you the terms and conditions our
+                                services can empower your business.
                             </marquee>
                         </div>
                     </div>
                 </div>
                 <!-- Form Here -->
-                <div class="row g-2 mt-3">
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput" style="font-weight: 400; font-family: archivo;">Your Name
-                                *</label>
+                <form class="needs-validation" novalidate>
+                    <div class="row g-2 mt-3">
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingName" placeholder="name@example.com"
+                                    required>
+                                <label for="floatingName" style="font-weight: 400; font-family: archivo;">Your Name
+                                    *</label>
+                                <div class="invalid-feedback">
+                                    Please enter your name.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="number" class="form-control" id="floatingPhone"
+                                    placeholder="name@example.com" required>
+                                <label for="floatingPhone" style="font-weight: 400; font-family: archivo;">Phone Number
+                                    *</label>
+                                <div class="invalid-feedback">
+                                    Please enter a valid phone number.
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput" style="font-weight: 400; font-family: archivo;">Phone Number
-                                *</label>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="row mt-2">
-                    <div class="col-md-12">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput" style="font-weight: 400; font-family: archivo;">Email Address
-                                *</label>
+                    <div class="row mt-2">
+                        <div class="col-md-12">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="floatingEmail"
+                                    placeholder="name@example.com" required>
+                                <label for="floatingEmail" style="font-weight: 400; font-family: archivo;">Email Address
+                                    *</label>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address.
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="form-floating mt-2">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                        style="height: 100px"></textarea>
-                    <label for="floatingTextarea2" style="font-weight: 400; font-family: archivo;">Messages *</label>
-                </div>
+                    <div class="form-floating mt-2">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                            style="height: 100px" required></textarea>
+                        <label for="floatingTextarea2" style="font-weight: 400; font-family: archivo;">Messages
+                            *</label>
+                        <div class="invalid-feedback">
+                            Please enter a message.
+                        </div>
+                    </div>
+                    <!-- reCAPTCHA Section -->
+                    <div class="container mt-5">
+                        <form class="was-validated">
+                            <div class="row g-2 m-3">
+                                <div class="col-md-6 text-center">
+                                    <!-- Check Box -->
+                                    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                                    <!-- Add the following div inside your form where you want the reCAPTCHA widget -->
+                                    <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY" required></div>
+                                    <div class="invalid-feedback">
+                                        Please complete the reCAPTCHA.
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <div class="btn-wrapper">
+                                        <div class="btn-background"></div>
+                                        <button type="submit" class="btn btn-primary p-3 btn-text"
+                                            style="border: none; background-color: #7d8dec;">SEND MESSAGE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </form>
             </div>
-
             <!-- Slider Section -->
             <div class="col-md-6">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -190,18 +281,90 @@
             </div>
         </div>
     </div>
+    <!-- Footer Section Here -->
+    <div class="mt-5 bg-dark text-light">
+        <div class="container">
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="assets/img/logo.png" alt="" width="40%">
+                        <p style="font-weight:500;font-family:archivo;font-size:20px; margin-top: 30px;">Mannymaker
+                            gives instant
+                            ideas for Cricut and
+                            Silhouette Designs for your Home and Office projects.</p>
+                        <!-- Social Icon Footer Here -->
+                        <a href="#" style="text-decoration: none; color: white;"
+                            onmouseover="document.getElementById('iconf').style.color='#0866ff'"
+                            onmouseout="document.getElementById('iconf').style.color='white'">
+                            <i class="fa fa-facebook-f m-2" style="font-size:24px;color:white" id="iconf"></i>
+                        </a>
+                        <a href="#" style="text-decoration: none; color: white;"
+                            onmouseover="document.getElementById('iconf1').style.color='#e702b9'"
+                            onmouseout="document.getElementById('iconf1').style.color='white'">
+                            <i class="fa fa-instagram m-2" style="font-size:24px;color:white" id="iconf1"></i>
+                        </a>
+                        <a href="#" style="text-decoration: none; color: white;"
+                            onmouseover="document.getElementById('iconf2').style.color='#1c96e8'"
+                            onmouseout="document.getElementById('iconf2').style.color='white'">
+                            <i class="fa fa-twitter m-2" style="font-size:24px;color:white" id="iconf2"></i>
+                        </a>
+                        <a href="#" style="text-decoration: none; color: white;"
+                            onmouseover="document.getElementById('iconf3').style.color='#f70101'"
+                            onmouseout="document.getElementById('iconf3').style.color='white'">
+                            <i class="fa fa-youtube m-2" style="font-size:24px;color:white" id="iconf3"></i>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <h5 style="font-size:21px;font-weight:600; font-family:archivo; color:#7d8dec;">Useful Links
+                        </h5>
+                        <ul class="navbar-nav" style="font-weight:500;font-family:archivo;font-size:20px;">
+                            <li class="nav-item m-1">
+                                <a class="navbar-brand" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item m-1">
+                                <a class="navbar-brand " href="About.html">About Us</a>
+                            </li>
+                            <li class="nav-item m-1">
+                                <a class="navbar-brand " href="#">Privacy Policy</a>
+                            </li>
+                            <li class="nav-item m-1">
+                                <a class="navbar-brand " href="#">Terms & Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
 
+                    <div class="col-4">
+                        <form>
+                            <h5 style="font-size:21px;font-weight:600; font-family:archivo; color:#7d8dec;">Subscribe
+                                Now</h5>
+                            <p style="font-weight:500;font-family:archivo;font-size:20px;">Don’t miss our future
+                                updates! Get
+                                Subscribed Today!</p>
+                            <div class="d-flex w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-primary" type="button"
+                                    style="background-color: #7d8dec; border: none;">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center p-3 text-light"
+        style="font-weight:500;font-family:archivo;font-size:20px;background-color:#7d8dec;">
+        <p>©copyright 2023 all rights reserved</p>
+    </div>
+    </footer>
+    <!-- WhatsApp -->
+    <a id="whatsapp-icon" href="https://wa.me/7678974784" target="_blank">
+        <img src="assets/img/whatsApp.png" alt="WhatsApp" width="80px">
+    </a>
     <!-- Mouse Event -->
     <div id="custom-cursor"></div>
     <div class="container">
-
-
-    <!-- Check Box -->       
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <!-- Add the following div inside your form where you want the reCAPTCHA widget -->
-    <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
-
-        <!-- Button Add -->
+    <!-- Down to Upper Side Button -->
+    <button onclick="scrollToTop()" id="scrollToTopBtn">&#8593;</button>
 
 
 
@@ -226,6 +389,27 @@
 
 
 
+
+
+        <!-- validation Form Here -->
+        <script>
+            (function () {
+                'use strict';
+
+                var forms = document.querySelectorAll('.needs-validation');
+
+                Array.from(forms).forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            })();
+        </script>
 
         <!-- Bootstrap JS Add -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
